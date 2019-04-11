@@ -13,7 +13,7 @@ namespace AmazingAppTests
             var name = "Matthew Manela";
             string role = null;
 //omjin
-            var display = IdentityUtils.FormatIdentityName(name, role);
+            var display = IdentityUtilsTests.FormatIdentityName(name, role);
 
             Assert.AreEqual("Matthew Manela", display);
         }
@@ -24,7 +24,7 @@ namespace AmazingAppTests
             var name = "Matthew Manela";
             var role = "Engineering Manager";
 
-            var display = IdentityUtils.FormatIdentityName(name, role);
+            var display = IdentityUtilsTests.FormatIdentityName(name, role);
 
             Assert.AreEqual("Matthew Manela (Engineering Manager)", display);
         }
